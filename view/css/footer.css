@@ -1,0 +1,28 @@
+.footer {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+	align-items: center;
+	position: relative;
+	left: 0;
+	bottom: 0;
+	border-top : 3px solid #5B411D;
+	background-color: rgb(112, 92, 64);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+	height: 9%;
+	width: 100%;
+}
+.cop{
+	display: flex;
+	align-items: center;
+	margin-right: 30px;
+	font-size: 2vh;
+	color: #FFD600;
+}
+.pw{
+	display: flex;
+	align-items: center;
+	margin-left: 30px;
+	font-size: 1.5vh;
+	color:#002184;
+}

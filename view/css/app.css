@@ -1,0 +1,311 @@
+html,body {
+	margin: 0;
+	padding: 0;
+	font-family: 'MedievalSharp', cursive;
+	background: #f5f2ed url(/img/fr-slys.png) 0 0 repeat;
+}
+h1 {
+	font-size: 5vh;
+	margin-left: 3vh;
+	color: #FFD600;
+}
+p {
+	margin: 0;
+}
+/***************************** Menu *******************************/
+.menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 82%;
+	width: auto;
+	margin-bottom: 1vh;
+}
+
+.menu_index {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.menu_profil {
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	margin-left: 20px;
+}
+
+@media all and (max-width: 1500px) {
+	.menu { flex-direction: column; align-items: center; height: auto;}
+	.menu_profil { flex-direction: column; align-items: center;}
+}
+@media all and (max-height: 1150px) {
+	.menu { margin-bottom: 0; height: auto;}
+}
+
+.m_pictures {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	height: auto;
+	width: 100%;
+	background: #f5f2ed url(/img/bg-body.png) 0 0 repeat;
+	border: 3px solid #5B411D;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	margin: 20px;
+	max-width: 1600px;
+	min-width: 50vw;
+	min-height: 60vh;
+}
+@media all and (max-width: 1500px) {
+	.m_pictures { width: 90%; max-width: 90%; height: auto;}
+}
+#pics {
+	display: flex;
+	justify-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: auto;
+	width: 100%;
+}
+.d_img {
+	width: 300px;
+	max-height: 325px;
+	margin: 20px;
+	background-size: 100% 100%;
+	border-radius: 10px;
+}
+.d_img:hover {
+	opacity: 0.75;
+}
+
+/******************************************************************/
+
+/****************************IMG COM*******************************/
+.scroll {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 5%;
+	padding-top: 15%;
+	padding-bottom: 15%;
+	margin-top: -10%;
+	max-height: 400px;
+	background-image: url("https://camagru-piabdo.fr/img/Scroll.png");
+	background-size: 100% 100%;
+	width: 80%;
+	height: 60%;
+}
+
+.like_img_share {
+	display: flex;
+	flex-direction: row; 
+	justify-content: space-around;
+	align-items: center;
+	width: 80%;
+	max-width: 1000px;;
+}
+
+.seals {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-width: 150px;
+}
+
+@media all and (max-width: 1700px) {
+	.seals {
+		min-width: 0;
+	}
+}
+
+.titles {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	height: 20%;
+}
+
+.comments {
+	overflow: auto;
+	width: 100%;
+	min-height: 30%;
+	max-height: 40%;
+}
+
+#myImg {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	justify-content: center;
+	align-items: center;
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+	display: flex;
+	width: 60%;
+	max-width: 650px;
+	border-radius: 10px;
+}
+
+/* Caption of Modal Image */
+#caption {
+	display: block;
+	width: 80%;
+	text-align: center;
+	color: black;
+	padding: 10px 0;
+}
+
+/* Add Animation */
+.modal-content, #caption, #likes, #share_facebook, .scroll {  
+	-webkit-animation-name: zoom;
+	-webkit-animation-duration: 0.6s;
+	animation-name: zoom;
+	animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+	from {-webkit-transform:scale(0)} 
+	to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+	from {transform:scale(0)}
+	to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #FFD600;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+	color: #002184;
+	text-decoration: none;
+	cursor: pointer;
+}
+/******************************************************************/
+/* width */
+.scroll > ::-webkit-scrollbar {
+	width: 20px;
+}
+
+/* Track */
+.scroll > ::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px grey; 
+	border-radius: 10px;
+}
+
+/* Handle */
+.scroll > ::-webkit-scrollbar-thumb {
+	background: #002185; 
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+.scroll > ::-webkit-scrollbar-thumb:hover {
+	background: #002184; 
+}
+
+#likes:hover{
+	opacity: 0.80;
+}
+#share_facebook:hover{
+	opacity: 0.80;
+}
+
+#com_holder {
+	width: 80%;
+	/* height: auto; */
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#del_cross {
+	color: #002184;
+	transition: 0.3s;
+	font-size: 25px;
+}
+#del_cross:hover {
+	color: #FFD600;
+}
+
+.add_com {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 80%;
+}
+
+#com {
+	width: 80%;
+	background-color: rgba(0, 0, 0, 0);
+	border-bottom: solid #002184 1px;
+	border-top: #000;
+	border-left: #000;
+	border-right: #000;
+}
+
+::placeholder {
+	color: black;
+	opacity: 1; /* Firefox */
+	font-family: 'MedievalSharp', cursive;
+}
+
+.send {
+	background: #002184;
+	border-color: #FFD600;
+	border-radius: 10px;
+	width: 15%;
+	color: white;
+	font-family: 'MedievalSharp', cursive;
+}
+.send2 {
+	background: #002184;
+	border-color: #FFD600;
+	border-radius: 10px;
+	min-width: 35%;
+	height: 7vh;
+	font-size: 5vh;
+	color: white;
+	font-family: 'MedievalSharp', cursive;
+}
+
+.send:hover {
+	color: #FFD600;
+}
+
+.send2:hover {
+	color: #FFD600;
+}

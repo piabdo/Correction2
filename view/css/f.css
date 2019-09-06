@@ -1,0 +1,66 @@
+.f-letter {
+    font-size: 4.142857em;
+    letter-spacing: .025em;
+    position: relative;
+}
+.header > .f-letter {
+    min-width: 360px;
+}
+.f-letter .f:before {
+    top: 6px;
+}
+.f-letter:after, .f-letter:before {
+    display: block;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    left: 6px;
+    background: #FFD600;
+    border-radius: 5px;
+    content: '';
+    z-index: 1;
+    top: 6px;
+}
+.f:after, .f-letter .f:before {
+    display: block;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    right: 6px;
+    background: #FFD600;
+    border-radius: 5px;
+    content: '';
+    
+}
+.f-letter .f {
+    position: relative;
+    color: #FFD600;
+    background: #002184;
+    border-radius: 2px;
+    padding: 13px 12px 10px 12px;
+    margin-right: -5%;
+    line-height: 52px;
+    font-size: 1.2068em;
+    display: inline-block;
+    min-width: 71px;
+    text-align: center;
+    letter-spacing: 0;
+}
+.f-letter:after, header.letter h1:after, header.letter h2:after {
+    top: 64px;
+}
+:after, :before {
+    box-sizing: border-box;
+}
+
+.titles > .f-letter {
+    font-size: 2em;
+}
+
+.scroll .f-letter > .f {
+    min-width: 0px;
+    line-height: 20px;
+}
+.scroll .f-letter:after {
+    top: 33;
+}

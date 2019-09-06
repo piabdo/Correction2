@@ -1,0 +1,68 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgb(112, 92, 64);
+	border-bottom : 3px solid #5B411D;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+	height: 9%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	min-height: 50px;
+}
+.header_right {
+	justify-content: center;
+	align-items: center;
+	margin-right: 1vw;
+	width: 820px;
+}
+
+.button {
+	background: #002184;
+	border-color: #FFD600;
+	height: 30%;
+	min-width: 250px;
+	width: auto;
+	border-radius: 10px;
+	font-size: 2vh;
+	color: white;
+	font-family: 'MedievalSharp', cursive;
+}
+.button2 {
+	background: #002184;
+	border-color: #FFD600;	
+	height: 9%;
+	width: 97%;
+	border-radius: 10px;
+	font-size: 2vh;
+	color: white;
+	font-family: 'MedievalSharp', cursive;
+	margin: 1vh;
+}
+.button:hover, .button2:hover {
+	color:  #FFD600;
+}
+
+form {
+	margin: 0;
+}
+@media all and (max-width: 1175px) {
+	.header_right > form  {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+.header_right > button {
+	width: 98%;
+}
+
+.log_input {
+	width: 33%;
+	min-width: 250px;
+	border-radius: 8px;
+	font-size: 1vh;
+}
